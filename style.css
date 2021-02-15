@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0133fe;
+}
+
+.logo-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  transition: all 0.3s;
+  padding: 0.3rem 0.8rem;
+}
+
+.navbar a:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.link:hover,
+link:focus {
+  background: #046ffa;
+}
+
+.name-input-container {
+  display: grid;
+  grid-template-columns:50px minmax(10rem, 25%);
+  margin: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.2em 0.8em;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.name-input:focus {
+  outline: none;
+}
+
+.link-name {
+  font-weight: bold;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 700px) {
+  .container,
+  .navbar {
+    flex-direction: row;
+  }
+  .container {
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  .navbar {
+    width: 60%;
+    justify-content: end;
+  }
+
+  .navbar a:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .link {
+    margin-right: 1.5rem;
+  }
+}
